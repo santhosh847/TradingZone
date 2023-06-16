@@ -1,0 +1,21 @@
+.c-item {
+    height: 480px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5)
+}
+
+
+.card-body:hover {
+    background-color: #0074d9;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.card-body:hover img{
+    filter: brightness(0) invert(1);
+    transition: 0.4s linear;
+}

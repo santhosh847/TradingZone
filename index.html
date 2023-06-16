@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Trading Zone</title>
+		<link rel="stylesheet" href="/public/styles/bootstrap.css" />
+		<link rel="stylesheet" href="/public/styles/styles.css" />
+		<!-- fontawesome cdn -->
+		<script
+			src="https://kit.fontawesome.com/7b319d9fe6.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<!-- navbar-->
+		<nav
+			class="navbar navbar-expand-lg bg-primary sticky-top"
+			data-bs-theme="dark"
+		>
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="/public/assets/logo.png" alt="" height="24" width="30" />
+					Trading Zone
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- navbar ends -->
+
+		<!-- hero slider-->
+		<div
+			id="carouselTitle"
+			class="carousel slide carousel-fade"
+			data-bs-ride="carousel"
+		>
+			<div class="carousel-indicators">
+				<button
+					type="button"
+					data-bs-target="#carouselTitle"
+					data-bs-slide-to="0"
+					class="active"
+					aria-current="true"
+					aria-label="Slide 1"
+				></button>
+				<button
+					type="button"
+					data-bs-target="#carouselTitle"
+					data-bs-slide-to="1"
+					aria-label="Slide 2"
+				></button>
+			</div>
+
+			<div class="carousel-inner">
+				<div class="carousel-item c-item active">
+					<img
+						src="/public/assets/cover1.jpeg"
+						class="d-block w-100 c-img"
+						alt="..."
+					/>
+					<div class="carousel-caption top-0 mt-4">
+						<p class="mt-5 fs-5 text-uppercase">
+							Gain valuable market insights from our experienced trading
+							consultants
+						</p>
+						<h1 class="display-1 fw-boldertext-captalize mt-3 pt-3">
+							Trading Zone India
+						</h1>
+					</div>
+				</div>
+
+				<div class="carousel-item c-item">
+					<img
+						src="/public/assets/cover2.jpeg"
+						class="d-block w-100 c-img"
+						alt="..."
+					/>
+					<div class="carousel-caption">
+						<h5 class="display-4 bolder">Trading Zone India</h5>
+						<p class="fs-5">
+							we are committed to providing exceptional trading solutions
+							tailored to meet the unique needs of our clients. With our
+							extensive industry knowledge, cutting-edge technology.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- hero slider ends -->
+
+		<!-- services -->
+		<section class="container mt-5">
+			<h5 class="mt-3 display-3 text-center fw-bold">Our Services</h5>
+			<hr />
+			<p class="text-center text-muted">
+				We provide best services to our customer
+			</p>
+			<div class="row mb-3 pb-3 mx-1 gy-3">
+				<div class="col-12 col-md-6 col-xl-3">
+					<div class="card text-center my-3 h-100">
+						<div
+							class="card-body d-flex align-items-center justify-content-evenly"
+						>
+							<img src="/public/assets/services/tips.png" alt="" />
+							<h3 class="mt-3">Tips and recommendations</h3>
+							<p>Expert Tips and Recommendations at Your Fingertips</p>
+						</div>
+					</div>
+				</div>
+				<!-- column ends -->
+				<div class="col-12 col-md-6 col-xl-3">
+					<div class="card text-center my-3 h-100">
+						<div
+							class="card-body d-flex align-items-center justify-content-evenly"
+						>
+							<img src="/public/assets/services/broker.png" alt="" />
+							<h3 class="mt-3">Sub-brokership</h3>
+							<p>75-80% Brk sharing</p>
+						</div>
+					</div>
+				</div>
+				<!-- column ends -->
+				<div class="col-12 col-md-6 col-xl-3">
+					<div class="card text-center my-3 h-100">
+						<div
+							class="card-body d-flex align-items-center justify-content-evenly"
+						>
+							<img src="/public/assets/services/algorithm.png" alt="" />
+							<h3 class="mt-3">Algo, Meta strategy</h3>
+							<p>Elevate Your Trading with Algo Strategies</p>
+						</div>
+					</div>
+				</div>
+				<!-- column ends -->
+				<div class="col-12 col-md-6 col-xl-3">
+					<div class="card text-center my-3 h-100">
+						<div
+							class="card-body d-flex align-items-center justify-content-evenly"
+						>
+							<img src="/public/assets/services/trading.png" alt="" />
+							<h3 class="mt-3">Options, trading courses</h3>
+							<p>
+								Equip Yourself with Knowledge and Gain Expertise in Options
+								through our Courses
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- column ends -->
+			</div>
+		</section>
+		<!-- services ends -->
+
+		<script src="/public/scripts/bootstrap.js"></script>
+	</body>
+</html>
