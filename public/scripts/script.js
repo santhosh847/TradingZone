@@ -1,9 +1,18 @@
+let brands = document.querySelectorAll("brand");
+for (let brand of brands) {
+	brand.classList.add("fw-bold");
+}
+
 let loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
 	// setTimeout(() => {
 	loader.style.display = "none";
 	// }, 2000);
 });
+
+setTimeout(() => {
+	loader.style.display = "none";
+}, 3000);
 
 function checkVisible(elm) {
 	var rect = elm.getBoundingClientRect();
