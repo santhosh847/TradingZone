@@ -5,20 +5,25 @@ window.addEventListener("load", function () {
 	// }, 2000);
 });
 
-function checkVisible(elm) {
-	var rect = elm.getBoundingClientRect();
-	var viewHeight = Math.max(
-		document.documentElement.clientHeight,
-		window.innerHeight
+function isElementVisible(element) {
+	var rect = element.getBoundingClientRect();
+	var viewportHeight =
+		window.innerHeight || document.documentElement.clientHeight;
+	var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
+	return (
+		rect.top <= viewportHeight &&
+		rect.bottom >= 0 &&
+		rect.left <= viewportWidth &&
+		rect.right >= 0
 	);
-	return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
 }
 
 function reveal() {
 	var reveals = document.querySelectorAll(".reveal");
 
 	for (var i = 0; i < reveals.length; i++) {
-		if (checkVisible(reveals[i])) {
+		if (isElementVisible(reveals[i])) {
 			reveals[i].classList.add("active");
 		} else {
 			reveals[i].classList.remove("active");
