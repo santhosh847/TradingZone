@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .c-item {
     height: 480px;
 }
@@ -196,3 +200,15 @@ footer p.text-center {
         transform: translate(0);
     }
 }
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
