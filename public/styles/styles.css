@@ -3,6 +3,10 @@ html {
     overflow: hidden;
 }
 
+* {
+    overflow-x: hidden;
+}
+
 .c-item {
     height: 480px;
 }
