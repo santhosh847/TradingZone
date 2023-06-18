@@ -236,8 +236,8 @@ footer p.text-center {
 }
 
 @media (max-width: 425px) {
-    .carousel-caption p{
-        font-size: 1.3rem;
+    .carousel-p{
+        font-size: 1rem;
     }
     .carousel-caption h1{
         font-size: 2rem;
