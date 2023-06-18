@@ -3,6 +3,7 @@ html, body {
     overflow-x: clip;
 }
 
+/* hero styles */
 .c-item {
     height: 480px;
 }
@@ -17,7 +18,7 @@ html, body {
     filter: brightness(0.5)
 }
 
-
+/* services styles */
 #services .card-body:hover {
     background-color: #0074d9;
     color: white;
@@ -30,9 +31,6 @@ html, body {
 }
 
 /* about us styles */
-
-
-  
 #about .container {
     padding: 40px;
 }
@@ -55,9 +53,6 @@ html, body {
 }
 
 /* footer styles */
-
-
-  
 footer {
     padding: 40px 0;
 }
@@ -94,8 +89,8 @@ footer p.text-center {
     font-size: 14px;
 }
   
-/* preloader */
 
+/* preloader */
 #preloader {
     background-color: #F1F6F9;
     position: fixed;
@@ -202,6 +197,7 @@ footer p.text-center {
     }
 }
 
+/* reveal on scroll styles  */
 .reveal{
     position: relative;
     transform: translateY(150px);
@@ -209,11 +205,12 @@ footer p.text-center {
     transition: 1s all ease;
   }
   
-  .reveal.active{
+.reveal.active{
     transform: translateY(0);
     opacity: 1;
-  }
+}
 
+/* our team styles */
   #OurTeam .links {
     justify-content: center;
     margin-bottom: 1rem;
@@ -235,6 +232,10 @@ footer p.text-center {
     margin-bottom: 0.8rem;
 }
 
+.card-img-top {
+    aspect-ratio: 2/2.4;
+  }
+
 @media (max-width: 425px) {
     .carousel-p{
         font-size: 1rem;
@@ -255,7 +256,7 @@ footer p.text-center {
     
 }
 
-/* footer link styles */
+/* social link styles */
 .linkwrapper .button{
     color: black;
     display: inline-block;
@@ -322,7 +323,5 @@ footer p.text-center {
     text-decoration: none;
   }
 
-  .card-img-top {
-    aspect-ratio: 2/2.4;
-  }
+
 
