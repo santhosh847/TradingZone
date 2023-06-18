@@ -222,6 +222,13 @@ footer p.text-center {
 #OurTeam .links img {
     height: 24px;
     padding: 0 0.8rem;
+    transition: all 1ms;
+}
+#OurTeam .links img:hover {
+    height: 24px;
+    padding: 0 0.8rem;
+    filter: brightness(0.9);
+    transform: scale(1.1);
 }
 
 #OurTeam img {
@@ -234,15 +241,26 @@ footer p.text-center {
     }
     .carousel-caption h1{
         font-size: 2rem;
+    }  
+    .heading-brand {
+        max-width: 200px;
     }
+    
+}
+
+@media (min-width: 768px) {
+    .navbar-brand img{
+        height: 40px;
+    }
+    
 }
 
 /* footer link styles */
-.footerlinkwrapper .button{
+.linkwrapper .button{
     color: black;
     display: inline-block;
-    height: 24px;
-    width: 24px;
+    height: 28px;
+    width: 28px;
     margin: 0 3px;
     overflow: hidden;
     background: #fff;
@@ -251,10 +269,10 @@ footer p.text-center {
     box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
     transition: all 0.3s ease-out;
   }
-  .footerlinkwrapper .button:hover{
+  .linkwrapper .button:hover{
     width: 120px;
   }
-  .footerlinkwrapper .button .icon{
+  .linkwrapper .button .icon{
     display: inline-block;
     height: 16px;
     width: 16px;
@@ -264,48 +282,47 @@ footer p.text-center {
     line-height: 16px;
     transition: all 0.3s ease-out;
   }
-  .footerlinkwrapper .button:nth-child(1):hover .icon{
+  .linkwrapper .button-facebook:hover .icon{
     background: #4267B2;
   }
-  .footerlinkwrapper .button:nth-child(2):hover .icon{
-    background: #1DA1F2;
+
+  .linkwrapper .button-instagram:hover .icon{
+    background: #962fbf;
   }
-  .footerlinkwrapper .button:nth-child(3):hover .icon{
-    background: #E1306C;
+  .linkwrapper .button-whatsapp:hover .icon{
+    background: green;/
   }
-  .footerlinkwrapper .button:nth-child(4):hover .icon{
-    background: #333;
-  }
-  .footerlinkwrapper .button:nth-child(5):hover .icon{
-    background: #ff0000;
-  }
-  .footerlinkwrapper .button .icon i{
+
+  .linkwrapper .button .icon i{
     font-size: 14px;
     line-height: 16px;
     transition: all 0.3s ease-out;
   }
-  .footerlinkwrapper .button:hover .icon i{
+  .linkwrapper .button:hover .icon i{
     color: #fff;
   }
-  .footerlinkwrapper .button span{
+  .linkwrapper .button span{
     font-size: 14px;
     font-weight: 500;
     line-height: 14px;
     margin-left: 3px;
     transition: all 0.3s ease-out;
   }
-  .footerlinkwrapper .button:nth-child(1) span{
+  .linkwrapper .button-facebook span{
     color: #4267B2;
   }
-  .footerlinkwrapper .button:nth-child(2) span{
-    color: #1DA1F2;
+  .linkwrapper .button-instagram span{
+    color: #962fbf;
   }
-  .footerlinkwrapper .button:nth-child(3) span{
-    color: #E1306C;
+  .linkwrapper .button-whatsapp span{
+    color: green;
   }
-  .footerlinkwrapper .button:nth-child(4) span{
-    color: #333;
+
+  .linkwrapper a {
+    text-decoration: none;
   }
-  .footerlinkwrapper .button:nth-child(5) span{
-    color: #ff0000;
+
+  .card-img-top {
+    aspect-ratio: 2/2.4;
   }
+
