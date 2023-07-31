@@ -236,17 +236,7 @@ footer p.text-center {
     aspect-ratio: 2/2.4;
   }
 
-@media (max-width: 425px) {
-    .carousel-p{
-        font-size: 1rem;
-    }
-    .carousel-caption h1{
-        font-size: 2rem;
-    }  
-    .heading-brand {
-        max-width: 200px;
-    }
-}
+
 a {
     text-decoration: none;
 }
@@ -260,12 +250,7 @@ a {
     font-size: 2rem;
 }
 
-@media (min-width: 768px) {
-    .navbar-brand img{
-        height: 40px;
-    }
 
-}
 
 /* social link styles */
 .linkwrapper .button{
@@ -356,3 +341,39 @@ a {
 text-align: justify;
 }
 
+#scrollable-text {
+    width: 100%;
+}
+
+/* styles for scrollable text */
+.scrollspy-example {
+    height: 230px;
+    overflow-y: scroll;
+    scrollbar-color:  var(--bs-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bs-primary);
+}
+
+@media (min-width: 768px) {
+    .navbar-brand img{
+        height: 40px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .carousel-p{
+        font-size: 1rem;
+    }
+    .carousel-caption h1{
+        font-size: 2rem;
+    }  
+    .heading-brand {
+        max-width: 200px;
+    }
+    .scrollspy-example {
+        height: 520px;
+    }
+}
