@@ -247,12 +247,24 @@ footer p.text-center {
         max-width: 200px;
     }
 }
+a {
+    text-decoration: none;
+}
+.fa-arrow-up-right-from-square {
+    font-weight: 600;
+    font-size: 0.8rem;;
+}
+.fa-angles-down {
+    cursor:pointer;
+    color: var(--bs-primary);
+    font-size: 2rem;
+}
 
 @media (min-width: 768px) {
     .navbar-brand img{
         height: 40px;
     }
-    
+
 }
 
 /* social link styles */
