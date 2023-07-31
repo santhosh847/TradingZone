@@ -10,9 +10,9 @@ window.addEventListener("load", function () {
 	// }, 2000);
 });
 
-setTimeout(() => {
-	loader.style.display = "none";
-}, 3000);
+// setTimeout(() => {
+// 	loader.style.display = "none";
+// }, 3000);
 
 function checkVisible(elm) {
 	var rect = elm.getBoundingClientRect();
