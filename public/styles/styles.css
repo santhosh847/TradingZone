@@ -19,11 +19,24 @@ html, body {
 }
 
 /* services styles */
+#why-us .card-body p {
+    color: #6c757d;
+
+}
+
 #why-us .card-body:hover {
     background-color: #0074d9;
     color: white;
     transition: 0.4s ease-in-out;
 }
+
+#why-us .card-body:hover p {
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+
+
 
 #why-us .card-body:hover img{
     filter: brightness(0) invert(1);
@@ -319,6 +332,9 @@ a {
     text-decoration: none;
   }
 
+  .service-list{
+    max-width: 550px;
+  }
 
 .service-list .fa-caret-right {
     color:#0074d9;
@@ -358,7 +374,7 @@ text-align: justify;
 
 @media (min-width: 768px) {
     .navbar-brand img{
-        height: 40px;
+        height: 32px;
     }
 
 }
