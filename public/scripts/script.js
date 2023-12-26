@@ -4,11 +4,11 @@ for (let brand of brands) {
 }
 
 let loader = document.getElementById("preloader");
-window.addEventListener("load", function () {
-	// setTimeout(() => {
+// window.addEventListener("load", function () {
+setTimeout(() => {
 	loader.style.display = "none";
-	// }, 2000);
-});
+}, 1000);
+// });
 
 // setTimeout(() => {
 // 	loader.style.display = "none";
