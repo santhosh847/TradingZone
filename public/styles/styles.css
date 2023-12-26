@@ -3,6 +3,18 @@ html, body {
     overflow-x: clip;
 }
 
+.navbar {
+    background: linear-gradient(180deg, #353535 0%, rgba(217, 217, 217, 0.00) 100%);
+    top:0;
+    z-index: 5;
+    width: 100%;
+    position: absolute;
+}
+
+.navbar-brand {
+    filter: invert();
+}
+
 /* hero styles */
 .c-item {
     height: 480px;
@@ -15,8 +27,9 @@ html, body {
 .c-img {
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.5)
+    filter: brightness(0.5);
 }
+
 
 /* services styles */
 #why-us .card-body p {
